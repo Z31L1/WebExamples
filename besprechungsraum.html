@@ -4,7 +4,7 @@
 </head>
 <body>
 
-    <canvas id="c"></canvas>
+    <canvas id="c" style="display: block; width: 90%; height: 90%;"></canvas>
 
 <script src="threejs/three.min.js"></script>
 <script src="threejs/GLTFLoader.js"></script>
@@ -29,7 +29,7 @@ function main() {
   scene.background = new THREE.Color('black');
 
   {
-    const planeSize = 40;
+    const planeSize = 0;
 
     const loader = new THREE.TextureLoader();
     const texture = loader.load('https://threejsfundamentals.org/threejs/resources/images/checker.png');
